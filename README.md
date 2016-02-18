@@ -1,11 +1,12 @@
 # About
-This is a small bash script to move a window between monitors on a distro with the X Window System.
+This is a small bash script to move a window between monitors int the way that aero-snap of windows 7 behaves on a distro with the X Window System.
+The windows will be vertically maximized and the width will be the half of the current monitor.
 
 For some reason, in a number of distros, there is no built-in way to configure a keyboard shortcut to move a window from one monitor to another.
 
 In Mint, there are keyboard shortcut options for moving to an _edge_, which can be used to to move non-maximized window to the left edge of the left-most monitor or right edge of the right-most monitor.  However, there are limitations to this approach.
 
-There are other scripts floating around, but I have not found one that works quite right with F11 fullscreen (as opposed to _maximized_) windows, nor one that supports three or more monitors.  Also, this script should detect (horizontal) monitor sizes and left-right order for you. 
+There are other scripts floating around, but I have not found one that works quite right with F11 fullscreen (as opposed to _maximized_) windows, nor one that supports three or more monitors.  Also, this script should detect (horizontal) monitor sizes and left-right order for you.
 
 
 # Usage
@@ -26,4 +27,3 @@ Then edit Keyboard Settings > Keyboard Shortcuts and add a custom shortcut that 
 
 # Dependencies
 This script uses xdotool, wmctrl, xwininfo, and xprop.  In Mint and Ubuntu, you'll probably only need to install xdotool.  In other distros you may need to install others.
-
